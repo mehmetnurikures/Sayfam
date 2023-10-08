@@ -1,0 +1,86 @@
+{ % load static % }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div_dosyasi_acma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+    <style>
+        ul li {
+            list-style-type: none;
+            width: 30%;
+
+         } 
+         ul li:hover{
+          background-color: darkcyan;
+          transition: 0.3s;
+         }
+       
+        ul li{
+
+            display:inline-block;
+            width: 60px;
+            padding: 10px;
+            background-color: rgb(0, 123, 255);
+
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+
+        ul li:nth-child(1){
+            background-color:rgb(33, 107, 33); 
+        }
+      
+           .kutu2{
+             width: 300px;
+             height: 300px;
+             background-color: rgb(166, 216, 216);
+             margin-left: 30px;
+             font-style: italic;
+             text-align: center;
+             display:inline-block;
+               }
+           .kutu3{
+             width: 200px;
+             height: 200px;
+             background-color: rgb(209, 216, 166);
+             margin-left: 30px;
+             display:inline-block;
+             margin-top: 50px;
+          
+         }
+   
+    </style>
+</head>
+<body>
+<ul>
+  <li><a href="http://127.0.0.1:8000/kiraz/Home_page" target="_parent"><i class="fa-solid fa-house"></i> Home page</a> </li>
+  <li><a href="http://127.0.0.1:8000/kiraz/Kalori_calculator" target="_parent"><i class="fa-solid fa-calculator "></i> Calorie Calculator</a> </li>
+  <li><a href="http://127.0.0.1:8000/kiraz/Blog" target="_parent"></a><i class="fa-solid fa-address-book"></i> Blog</a> </li>
+  <li><a href="http://127.0.0.1:8000/kiraz/About_us" target="_self"><i class="fa-solid fa-address-card"></i> About Us</a> </li>
+  <li><a href="http://127.0.0.1:8000/kiraz/Contact_us" target="_blank"><i class="fa-solid fa-address-card"></i> Contact Us</a> </li>
+
+</ul>
+  </div>  
+  <div class="kutu2">
+<h1>Contact Us</h1>
+<h2>We are here to help you</h2>
+<h2>You can reach us by e-mail</h2>
+<h2>E-mail:ingo@gym360.online</h2>
+  </div>  
+
+  <div class="kutu3"> 
+
+  <img src="{ % static 'img/mehmetnurikures.jpeg' % }", width=200px; height=200px; alt="Mehmet Nuri Kures'in Fotografi">
+
+  </div>
+  
+</body>
+</html>
